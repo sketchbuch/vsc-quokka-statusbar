@@ -1,0 +1,1 @@
+{"version":3,"file":"CommitLintView.js","sourceRoot":"","sources":["../src/CommitLintView.ts"],"names":[],"mappings":";;AAAA,mCAAgC;AAEhC,MAAM,cAAc;IAClB;QACE,eAAM,CAAC,YAAY,CAAC,EAAE,WAAW,EAAE,YAAY,EAAE,KAAK,EAAE,MAAM,EAAE,CAAC,CAAC;IACpE,CAAC;CACF;AAED,kBAAe,cAAc,CAAC"}
