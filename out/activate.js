@@ -1,23 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require("vscode");
+const nls = require("vscode-nls");
+const localise = nls.config({ messageFormat: nls.MessageFormat.file })();
 const priority = 1; // The higher the number the more left the button appears
 const alignment = vscode.StatusBarAlignment.Left;
 const commands = [
     {
         command: 'quokka.makeQuokkaFromExistingFile',
-        text: 'Q +',
-        tooltip: 'Start Quokka (current file)',
+        text: localise('start.text', 'Q +'),
+        tooltip: localise('start.tooltip', 'Start Quokka (current file)'),
     },
     {
         command: 'quokka.stopCurrent',
-        text: 'Q -',
-        tooltip: 'Stop Quokka (current file)',
+        text: localise('stop.text', 'Q -'),
+        tooltip: localise('stop.tooltip', 'Stop Quokka (current file)'),
     },
     {
         command: 'quokka.stopAll',
-        text: 'Q - -',
-        tooltip: 'Stop Quokka (all files)',
+        text: localise('stopall.text', 'Q - -'),
+        tooltip: localise('stopall.tooltip', 'Stop Quokka (all files)'),
     },
 ];
 function activate(context) {

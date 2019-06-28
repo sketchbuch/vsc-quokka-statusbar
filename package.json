@@ -1,6 +1,6 @@
 {
-  "name": "vsc-quokka-sidebar",
-  "displayName": "vsc_quokka_sidebar",
+  "name": "vsc_quokka_statusbar",
+  "displayName": "VSC Quokka Statusbar Buttons",
   "description": "Adds buttons to the status bar in VSC to control Quokka.",
   "version": "0.0.1",
   "license": "MIT",
@@ -29,12 +29,15 @@
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "yarn run compile && node ./node_modules/vscode/bin/test"
   },
+  "dependencies": {
+    "vscode-nls": "^4.1.1"
+  },
   "devDependencies": {
-    "typescript": "^3.3.1",
-    "vscode": "^1.1.28",
-    "tslint": "^5.12.1",
+    "@types/mocha": "^2.2.42",
     "@types/node": "^10.12.21",
-    "@types/mocha": "^2.2.42"
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28"
   },
   "extensionDependency": [
     "wallabyjs.quokka-vscode"
