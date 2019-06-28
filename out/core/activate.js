@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const vscode = require("vscode");
-const watch_editors_1 = require("../utils/watch_editors");
 const create_buttons_1 = require("../utils/create_buttons");
 const update_statusbar_1 = require("../utils/update_statusbar");
+const watch_editors_1 = require("../utils/watch_editors");
+const quokka_1 = require("../constants/quokka");
 function activate() {
-    const quokka = vscode.extensions.getExtension('wallabyjs.quokka-vscode');
+    const quokka = vscode.extensions.getExtension(quokka_1.QUOKKA_EXT_NAME);
     if (quokka === undefined) {
         return;
     }

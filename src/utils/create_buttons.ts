@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as nls from 'vscode-nls';
 import { BTN_ALIGNMENT, BTN_PRIORITY } from '../constants/buttons';
-import { Button } from '../buttons/buttons.interface';
+import { Button } from '../types/buttons';
 import { buttons } from '../buttons/buttons';
 
 const createButtons = (): vscode.StatusBarItem[] => {
