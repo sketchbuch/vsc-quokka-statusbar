@@ -1,10 +1,10 @@
-# Visual Studio Code (VSC) Quokka Statusbar Buttons Extension
+# VSC Quokka Statusbar Buttons Extension
 
 **(vsc_quokka_statusbar)**
 
 ![alt text](https://github.com/sketchbuch/vsc_quokka_statusbar/blob/master/docs/images/screenshot.png 'VSC Quokka Statusbar Buttons Extension')
 
-Adds buttons to the status bar in VSC to control Quokka:
+Adds buttons to the status bar in Visual Studio Code (VSC) to control Quokka:
 
 - **"Q +"** Start Quokka on the current file
 - **"Q -"** Stop Quokka from processing the current file
