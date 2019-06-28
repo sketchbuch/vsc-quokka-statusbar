@@ -1,4 +1,4 @@
-# VSC Quokka Statusbar Buttons Extension
+# Visual Studio Code (VSC) Quokka Statusbar Buttons Extension
 
 **(vsc_quokka_statusbar)**
 
@@ -11,3 +11,5 @@ Adds buttons to the status bar in VSC to control Quokka:
 - **"Q --"** Stop Quokka from processing all files
 
 The buttons when appear when a Javascript/Typescript file is opened. There are no configurations options at the moment as I can't see any need for them.
+
+NB: This is my first VSC extension so feel free to give me feedback!
