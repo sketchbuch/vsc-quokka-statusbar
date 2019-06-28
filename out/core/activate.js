@@ -12,9 +12,7 @@ function activate() {
     }
     const buttons = create_buttons_1.default();
     watch_editors_1.default(buttons);
-    if (vscode.window.activeTextEditor !== undefined) {
-        update_statusbar_1.default(vscode.window.activeTextEditor, buttons);
-    }
+    update_statusbar_1.default(vscode.window.activeTextEditor, buttons);
 }
 exports.activate = activate;
 exports.default = activate;

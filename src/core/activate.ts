@@ -13,10 +13,7 @@ export function activate() {
 
   const buttons: vscode.StatusBarItem[] = createButtons();
   watchEditors(buttons);
-
-  if (vscode.window.activeTextEditor !== undefined) {
-    updateStatusbar(vscode.window.activeTextEditor, buttons);
-  }
+  updateStatusbar(vscode.window.activeTextEditor, buttons);
 }
 
 export default activate;
