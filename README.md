@@ -12,4 +12,7 @@ Adds buttons to the status bar in Visual Studio Code (VSC) to control Quokka:
 
 The buttons appear when the active editor is a Javascript/Typescript file. There are no configurations options at the moment as I can't see any need for them.
 
-NB: This is my first VSC extension so feel free to give me feedback!
+## Additional Information
+
+- You need to install the Quokka VSC extension to be able to use this extension!
+- This is my first VSC extension so feel free to give me feedback!
