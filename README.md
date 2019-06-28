@@ -1,4 +1,6 @@
-# vsc_quokka_statusbar
+# VSC Quokka Statusbar Buttons Extension
+
+**(vsc_quokka_statusbar)**
 
 Adds buttons to the status bar in VSC to control Quokka:
 
