@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-const updateStatusbar = (editor: vscode.TextEditor | undefined, buttons: vscode.StatusBarItem[]) => {
+const updateStatusbar = (editor: vscode.TextEditor | undefined, buttons: vscode.StatusBarItem[]): void => {
   let showButtons: boolean = false;
 
   if (editor !== undefined) {

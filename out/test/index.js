@@ -17,7 +17,7 @@ const testRunner = require("vscode/lib/testrunner");
 // for more info
 testRunner.configure({
     ui: 'tdd',
-    useColors: true // colored output from test results
+    useColors: true,
 });
 module.exports = testRunner;
 //# sourceMappingURL=index.js.map

@@ -8,16 +8,14 @@ const updateStatusbar = (editor, buttons) => {
             showButtons = true;
         }
     }
-    if (showButtons) {
-        buttons.forEach((btn) => {
+    buttons.forEach((btn) => {
+        if (showButtons) {
             btn.show();
-        });
-    }
-    else {
-        buttons.forEach((btn) => {
+        }
+        else {
             btn.hide();
-        });
-    }
+        }
+    });
 };
 exports.default = updateStatusbar;
 //# sourceMappingURL=update_statusbar.js.map
