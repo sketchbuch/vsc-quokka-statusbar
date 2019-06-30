@@ -1,27 +1,39 @@
 {
-  "name": "vsc_quokka_statusbar",
+  "name": "vsc-quokka-statusbar",
   "displayName": "VSC Quokka Statusbar Buttons",
   "description": "Adds buttons to the status bar in Visual Studio Code (VSC) to control Quokka",
   "version": "0.2.0",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "publisher": "sketchbuch",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sketchbuch/vsc_quokka_statusbar"
+  "main": "./out/extension.js",
+  "icon": "./logo.png",
+  "author": {
+    "name": "sketchbuch"
   },
+  "bugs": {
+    "url": "https://github.com/sketchbuch/vsc-quokka-statusbar/issues"
+  },
+  "categories": [
+    "Linters",
+    "Other"
+  ],
   "engines": {
     "vscode": "^1.35.0"
   },
-  "categories": [
-    "Other"
+  "keywords": [
+    "quokka",
+    "statusbar"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sketchbuch/vsc-quokka-statusbar"
+  },
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:javascriptreact",
     "onLanguage:typescript",
     "onLanguage:typescriptreact"
   ],
-  "main": "./out/extension.js",
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",

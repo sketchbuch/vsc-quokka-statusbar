@@ -13,15 +13,13 @@ const updateStatusbar = (editor: vscode.TextEditor | undefined, buttons: vscode.
     }
   }
 
-  if (showButtons) {
-    buttons.forEach((btn: vscode.StatusBarItem) => {
+  buttons.forEach((btn: vscode.StatusBarItem) => {
+    if (showButtons) {
       btn.show();
-    });
-  } else {
-    buttons.forEach((btn: vscode.StatusBarItem) => {
+    } else {
       btn.hide();
-    });
-  }
+    }
+  });
 };
 
 export default updateStatusbar;
