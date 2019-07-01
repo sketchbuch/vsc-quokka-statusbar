@@ -1,25 +1,13 @@
 import * as assert from 'assert';
 import * as vscode from 'vscode';
 import createButtons from '../../utils/create_buttons';
-import { Button } from '../../types/buttons';
+import mockButtons from '../mocks/mockButtons';
 
 suite('createButtons()', function() {
-  const buttons: Button[] = [
-    {
-      command: 'cmd-1',
-      text: 'text-1',
-      tooltip: 'toolti-1',
-    },
-    {
-      command: 'cmd-2',
-      text: 'text-2',
-      tooltip: 'toolti-2',
-    },
-  ];
-  const result: vscode.StatusBarItem[] = createButtons(buttons);
+  const result: vscode.StatusBarItem[] = createButtons(mockButtons);
 
   test('Returns the correct number of buttons', function() {
-    assert.equal(result.length, buttons.length);
+    assert.strictEqual(result.length, mockButtons.length);
   });
 
   result.forEach((button: vscode.StatusBarItem, index: number) => {

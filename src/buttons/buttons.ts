@@ -4,7 +4,7 @@ import { QUOKKA_CMD_START_CUR, QUOKKA_CMD_STOP_ALL, QUOKKA_CMD_STOP_CUR } from '
 
 const localise: nls.LocalizeFunc = nls.config({ messageFormat: nls.MessageFormat.file })();
 
-export const buttons: Button[] = [
+const buttons: Button[] = [
   {
     command: QUOKKA_CMD_START_CUR,
     text: localise('start.text', 'Q +'),
@@ -21,3 +21,5 @@ export const buttons: Button[] = [
     tooltip: localise('stopall.tooltip', 'Stop Quokka (all files)'),
   },
 ];
+
+export default buttons;

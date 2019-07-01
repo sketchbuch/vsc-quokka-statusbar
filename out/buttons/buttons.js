@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const nls = require("vscode-nls");
 const quokka_1 = require("../constants/quokka");
 const localise = nls.config({ messageFormat: nls.MessageFormat.file })();
-exports.buttons = [
+const buttons = [
     {
         command: quokka_1.QUOKKA_CMD_START_CUR,
         text: localise('start.text', 'Q +'),
@@ -20,4 +20,5 @@ exports.buttons = [
         tooltip: localise('stopall.tooltip', 'Stop Quokka (all files)'),
     },
 ];
+exports.default = buttons;
 //# sourceMappingURL=buttons.js.map

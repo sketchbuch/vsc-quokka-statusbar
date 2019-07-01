@@ -10,9 +10,9 @@ function activate() {
     if (vscode.extensions.getExtension(quokka_1.QUOKKA_EXT_NAME) === undefined) {
         return;
     }
-    const buttons = create_buttons_1.default(buttons_1.buttons);
-    watch_editors_1.default(buttons);
-    update_statusbar_1.default(vscode.window.activeTextEditor, buttons);
+    const statusButtons = create_buttons_1.default(buttons_1.default);
+    watch_editors_1.default(statusButtons);
+    update_statusbar_1.default(vscode.window.activeTextEditor, statusButtons);
 }
 exports.activate = activate;
 exports.default = activate;
