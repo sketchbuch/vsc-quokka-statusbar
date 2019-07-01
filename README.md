@@ -2,7 +2,7 @@
 
 **(vsc-quokka-statusbar)**
 
-![alt text](https://github.com/sketchbuch/vsc-quokka-statusbar/blob/master/docs/images/screenshot.png 'VSC Quokka Statusbar Buttons Extension')
+![alt text](https://raw.githubusercontent.com/sketchbuch/vsc-quokka-statusbar/master/docs/images/screenshot.png 'VSC Quokka Statusbar Buttons Extension')
 
 Adds buttons to the status bar in Visual Studio Code (VSC) to control Quokka:
 

@@ -5,7 +5,7 @@ import watchEditors from '../utils/watch_editors';
 import { QUOKKA_EXT_NAME } from '../constants/quokka';
 import buttons from '../buttons/buttons';
 
-export function activate() {
+const activate = () => {
   if (vscode.extensions.getExtension(QUOKKA_EXT_NAME) === undefined) {
     return;
   }
@@ -13,6 +13,6 @@ export function activate() {
   const statusButtons: vscode.StatusBarItem[] = createButtons(buttons);
   watchEditors(statusButtons);
   updateStatusbar(vscode.window.activeTextEditor, statusButtons);
-}
+};
 
 export default activate;
