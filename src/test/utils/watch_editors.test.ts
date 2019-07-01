@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import * as updateStatusbar from '../../utils/update_statusbar';
 import createButtons from '../../utils/create_buttons';
 import mockButtons from '../mocks/mockButtons';
 import watchEditors from '../../utils/watch_editors';
