@@ -16,5 +16,6 @@ suite('watchEditors()', function() {
     const mockStatusButtons: vscode.StatusBarItem[] = createButtons(mockButtons);
     watchEditors(mockStatusButtons);
     assert(spiedUpdateStatusbar.called);
+    spiedUpdateStatusbar.restore();
   });
 });

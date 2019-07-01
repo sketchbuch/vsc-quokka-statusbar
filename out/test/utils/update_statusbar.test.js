@@ -18,6 +18,10 @@ suite('updateStatusbar()', function () {
         spiedHide = sinon.spy(mockButton, 'hide');
         spiedShow = sinon.spy(mockButton, 'show');
     });
+    mocha_1.afterEach(() => {
+        spiedHide.restore();
+        spiedShow.restore();
+    });
     test('btn.hide() called if editor is undefined', function () {
         update_statusbar_1.default(undefined, mockButtons);
         assert(spiedHide.calledOnce);

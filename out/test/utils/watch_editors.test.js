@@ -12,6 +12,7 @@ suite('watchEditors()', function () {
         const mockStatusButtons = create_buttons_1.default(mockButtons_1.default);
         watch_editors_1.default(mockStatusButtons);
         assert(spiedUpdateStatusbar.called);
+        spiedUpdateStatusbar.restore();
     });
 });
 //# sourceMappingURL=watch_editors.test.js.map

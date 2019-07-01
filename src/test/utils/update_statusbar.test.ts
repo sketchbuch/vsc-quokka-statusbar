@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as assert from 'assert';
 import * as sinon from 'sinon';
-import { beforeEach } from 'mocha';
+import { afterEach, beforeEach } from 'mocha';
 import updateStatusbar from '../../utils/update_statusbar';
 
 const getMockEditor = (languageId: string) => {
@@ -19,6 +19,11 @@ suite('updateStatusbar()', function() {
     mockButtons = [mockButton];
     spiedHide = sinon.spy(mockButton, 'hide');
     spiedShow = sinon.spy(mockButton, 'show');
+  });
+
+  afterEach(() => {
+    spiedHide.restore();
+    spiedShow.restore();
   });
 
   test('btn.hide() called if editor is undefined', function() {
