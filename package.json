@@ -2,11 +2,11 @@
   "name": "vsc-quokka-statusbar",
   "displayName": "VSC Quokka Statusbar Buttons",
   "description": "Adds buttons to the status bar in Visual Studio Code (VSC) to control Quokka",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "license": "SEE LICENSE IN LICENSE.txt",
   "publisher": "sketchbuch",
   "main": "./out/extension.js",
-  "icon": "./logo.png",
+  "icon": "logo.png",
   "author": {
     "name": "sketchbuch"
   },
