@@ -8,7 +8,7 @@ const updateStatusbar = (editor: vscode.TextEditor | undefined, buttons: vscode.
       document: { languageId },
     } = editor;
 
-    if (languageId === 'javascript' || languageId === 'typescript') {
+    if (languageId.indexOf('javascript') === 0 || languageId.indexOf('typescript') === 0) {
       showButtons = true;
     }
   }
