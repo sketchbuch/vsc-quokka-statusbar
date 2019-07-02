@@ -1,4 +1,4 @@
-# VSC Quokka Statusbar Buttons Extension
+# Quokka Statusbar Buttons Extension
 
 **(vsc-quokka-statusbar)**
 

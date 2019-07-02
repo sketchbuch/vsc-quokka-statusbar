@@ -1,6 +1,6 @@
 {
   "name": "vsc-quokka-statusbar",
-  "displayName": "VSC Quokka Statusbar Buttons",
+  "displayName": "Quokka Statusbar Buttons",
   "description": "Adds buttons to the status bar in Visual Studio Code (VSC) to control Quokka",
   "version": "1.1.0",
   "license": "SEE LICENSE IN LICENSE.txt",
@@ -14,7 +14,7 @@
     "url": "https://github.com/sketchbuch/vsc-quokka-statusbar/issues"
   },
   "categories": [
-    "Linters",
+    "Debuggers",
     "Other"
   ],
   "engines": {

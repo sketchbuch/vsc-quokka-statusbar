@@ -1,1 +1,0 @@
-{"version":3,"file":"watch_editors.js","sourceRoot":"","sources":["../../src/utils/watch_editors.ts"],"names":[],"mappings":";;AAAA,iCAAiC;AACjC,yDAAiD;AAEjD,MAAM,YAAY,GAAG,CAAC,OAA+B,EAAQ,EAAE;IAC7D,MAAM,CAAC,MAAM,CAAC,2BAA2B,CAAC,CAAC,MAAqC,EAAE,EAAE;QAClF,0BAAe,CAAC,MAAM,EAAE,OAAO,CAAC,CAAC;IACnC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC;AAEF,kBAAe,YAAY,CAAC"}

@@ -1,1 +1,0 @@
-{"version":3,"file":"mockButtons.js","sourceRoot":"","sources":["../../../src/test/mocks/mockButtons.ts"],"names":[],"mappings":";;AAEA,MAAM,WAAW,GAAa;IAC5B;QACE,OAAO,EAAE,OAAO;QAChB,IAAI,EAAE,QAAQ;QACd,OAAO,EAAE,UAAU;KACpB;IACD;QACE,OAAO,EAAE,OAAO;QAChB,IAAI,EAAE,QAAQ;QACd,OAAO,EAAE,UAAU;KACpB;CACF,CAAC;AAEF,kBAAe,WAAW,CAAC"}
