@@ -5,44 +5,44 @@ import { afterEach, beforeEach } from 'mocha';
 import * as createButtons from '../../utils/create_buttons';
 import * as updateStatusbar from '../../utils/update_statusbar';
 import * as watchEditors from '../../utils/watch_editors';
-import activate from '../../core/activate';
-import { Button } from '../../types/buttons';
-
-type SpiedActiveTextEditor = sinon.SinonSpy<any[], any>;
-type SpiedCreateButtons = sinon.SinonSpy<[Button[]], vscode.StatusBarItem[]>;
-type SpiedWatchEditors = sinon.SinonSpy<[vscode.StatusBarItem[]], void>;
-type SpiedUpdateStatusbar = sinon.SinonSpy<[vscode.TextEditor | undefined, vscode.StatusBarItem[]], void>;
+import * as ext from '../../core/activate';
 
 suite('activate()', function() {
-  let spiedCreateButtons: SpiedCreateButtons;
-  let spiedWatchEditors: SpiedWatchEditors;
-  let spiedUpdateStatusbar: SpiedUpdateStatusbar;
-
-  beforeEach(function() {
-    spiedCreateButtons = sinon.spy(createButtons, 'default');
-    spiedWatchEditors = sinon.spy(watchEditors, 'default');
-    spiedUpdateStatusbar = sinon.spy(updateStatusbar, 'default');
+  test('Activates corectly', function() {
+    let spiedSetupExtension: sinon.SinonSpy = sinon.spy(ext, 'setupExtension');
+    ext.activate();
+    assert(spiedSetupExtension.called);
   });
 
-  afterEach(function() {
-    spiedCreateButtons.restore();
-    spiedWatchEditors.restore();
-    spiedUpdateStatusbar.restore();
-  });
+  suite('setupExtension()', function() {
+    let spiedCreateButtons: sinon.SinonSpy;
+    let spiedWatchEditors: sinon.SinonSpy;
+    let spiedUpdateStatusbar: sinon.SinonSpy;
 
-  test('Returns early if no Quokka', function() {
-    // TODO - find out how to mock vscode.extensions.getExtension... I wish jest could be used.
-    activate();
-    // assert(spiedActiveTextEditor.called);
-    assert(spiedCreateButtons.called);
-    assert(spiedWatchEditors.called);
-    assert(spiedUpdateStatusbar.called);
-  });
+    beforeEach(function() {
+      spiedCreateButtons = sinon.spy(createButtons, 'default');
+      spiedWatchEditors = sinon.spy(watchEditors, 'default');
+      spiedUpdateStatusbar = sinon.spy(updateStatusbar, 'default');
+    });
 
-  test('Activates correctly if Quokka exists', function() {
-    activate();
-    assert(spiedCreateButtons.called);
-    assert(spiedWatchEditors.called);
-    assert(spiedUpdateStatusbar.called);
+    afterEach(function() {
+      spiedCreateButtons.restore();
+      spiedWatchEditors.restore();
+      spiedUpdateStatusbar.restore();
+    });
+
+    test('Does not setup if Quokka is undefined', function() {
+      ext.setupExtension(undefined);
+      assert(spiedCreateButtons.notCalled);
+      assert(spiedWatchEditors.notCalled);
+      assert(spiedUpdateStatusbar.notCalled);
+    });
+
+    test('Sets up correctly if Quokka exists', function() {
+      ext.setupExtension({} as vscode.Extension<any>);
+      assert(spiedCreateButtons.called);
+      assert(spiedWatchEditors.called);
+      assert(spiedUpdateStatusbar.called);
+    });
   });
 });
