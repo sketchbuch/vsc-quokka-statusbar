@@ -10,7 +10,7 @@ Adds buttons to the status bar in Visual Studio Code to control Quokka:
 - **"Q -"** Stop Quokka from processing the current file
 - **"Q --"** Stop Quokka from processing all files
 
-The buttons appear when the active editor is a Javascript/Typescrip file. There are no configurations options at the moment as I can't see any need for them.
+The buttons appear when the active editor is a Javascript/Typescript file. There are no configurations options at the moment as I can't see any need for them.
 
 ## Additional Information
 
