@@ -4,3 +4,4 @@ node_modules
 *.vsix
 *.code-workspace
 audit-report.html
+Temp.txt
