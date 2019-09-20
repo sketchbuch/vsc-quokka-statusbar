@@ -35,11 +35,12 @@
     "onLanguage:typescriptreact"
   ],
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
+    "audit-html": "yarn audit --json | yarn-audit-html --output audit-report.html",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test",
+    "vscode:prepublish": "yarn run compile",
+    "watch": "tsc -watch -p ./"
   },
   "dependencies": {
     "vscode-nls": "^4.1.1"
@@ -54,7 +55,8 @@
     "ts-mockito": "^2.3.1",
     "tslint": "^5.12.1",
     "typescript": "^3.3.1",
-    "vscode": "^1.1.28"
+    "vscode": "^1.1.28",
+    "yarn-audit-html": "^1.1.0"
   },
   "extensionDependency": [
     "wallabyjs.quokka-vscode"
