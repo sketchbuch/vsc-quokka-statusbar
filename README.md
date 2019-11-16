@@ -19,4 +19,4 @@ The buttons appear when the active editor is a Javascript/Typescript file. There
 
 ## Latest version: v1.2.2
 
-- Fixed issue #4: When changeing the language in new/existing file the buttons in the status bar are now updated.
+- Fixed issue #4: When changing the language in new/existing file the buttons in the status bar are now updated.
