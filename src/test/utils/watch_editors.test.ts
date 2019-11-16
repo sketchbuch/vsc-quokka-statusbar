@@ -11,8 +11,16 @@ type SpiedUpdateStatusbar = sinon.SinonSpy<
 >;
 
 suite('watchEditors()', function() {
-  test('updateStatusbar() called', function() {
-    const spiedUpdateStatusbar: SpiedUpdateStatusbar = sinon.spy(vscode.window, 'onDidChangeActiveTextEditor');
+  test('updateStatusbar() called in onDidChangeActiveTextEditor()', function() {
+    const spiedUpdateStatusbar = sinon.spy(vscode.window, 'onDidChangeActiveTextEditor');
+    const mockStatusButtons: vscode.StatusBarItem[] = createButtons(mockButtons);
+    watchEditors(mockStatusButtons);
+    assert(spiedUpdateStatusbar.called);
+    spiedUpdateStatusbar.restore();
+  });
+
+  test('updateStatusbar() called in onDidOpenTextDocument()', function() {
+    const spiedUpdateStatusbar = sinon.spy(vscode.workspace, 'onDidOpenTextDocument');
     const mockStatusButtons: vscode.StatusBarItem[] = createButtons(mockButtons);
     watchEditors(mockStatusButtons);
     assert(spiedUpdateStatusbar.called);
