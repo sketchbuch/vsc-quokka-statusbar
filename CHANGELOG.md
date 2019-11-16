@@ -6,7 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 1.2.2
 
-- Fixed issue #4: When changeing the language in new/existing files the buttons in the status bar are now updated.
+- Fixed issue #4: When changing the language in new/existing files the buttons in the status bar are now updated.
 
 ## 1.0.0
 
