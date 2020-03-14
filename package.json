@@ -46,7 +46,7 @@
     "vscode-nls": "^4.1.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.10",
+    "@types/chai": "^4.2.11",
     "@types/mocha": "^5.2.7",
     "@types/node": "^13.9.0",
     "@types/sinon": "^7.0.13",
