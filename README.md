@@ -20,7 +20,6 @@ The buttons appear when the active editor is a Javascript/Typescript file. There
 ## Latest version
 
 
-#### [1.3.0](https://github.com/sketchbuch/vsc-quokka-statusbar/compare/v1.2.2...v1.3.0) (2020-06-06)
+#### [1.3.1](https://github.com/sketchbuch/vsc-quokka-statusbar/compare/v1.3.0...v1.3.1) (2020-06-06)
 
-- Localised
-- New logo
+- Fix translation bug
