@@ -17,6 +17,10 @@ The buttons appear when the active editor is a Javascript/Typescript file. There
 - You need to install the [Quokka VSC extension](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode) to be able to use this extension
 - This is my first VSC extension so feel free to give me feedback
 
-## Latest version: v1.2.2
+## Latest version
 
-- Fixed issue #4: When changing the language in new/existing file the buttons in the status bar are now updated.
+
+#### [1.3.0](https://github.com/sketchbuch/vsc-quokka-statusbar/compare/v1.2.2...v1.3.0) (2020-06-06)
+
+- Localised
+- New logo
