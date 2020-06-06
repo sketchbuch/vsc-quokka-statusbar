@@ -1,0 +1,8 @@
+{
+  "btn.start": "Q +",
+  "btn.start.tooltip": "Start Quokka (current file)",
+  "btn.stop": "Q -",
+  "btn.stop.tooltip": "Stop Quokka (current file)",
+  "btn.stopAll": "Q - -",
+  "btn.stopAll.tooltip": "Stop Quokka (all files)"
+}

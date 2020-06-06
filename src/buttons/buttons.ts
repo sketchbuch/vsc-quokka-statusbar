@@ -1,24 +1,23 @@
-import * as nls from 'vscode-nls';
+
 import { Button } from '../types/buttons';
 import { QUOKKA_CMD_START_CUR, QUOKKA_CMD_STOP_ALL, QUOKKA_CMD_STOP_CUR } from '../constants/quokka';
-
-const localise: nls.LocalizeFunc = nls.config({ messageFormat: nls.MessageFormat.file })();
+import { t } from '../localisation';
 
 const buttons: Button[] = [
   {
     command: QUOKKA_CMD_START_CUR,
-    text: localise('start.text', 'Q +'),
-    tooltip: localise('start.tooltip', 'Start Quokka (current file)'),
+    text: t('btn.start'),
+    tooltip: t('btn.start.tooltip'),
   },
   {
     command: QUOKKA_CMD_STOP_CUR,
-    text: localise('stop.text', 'Q -'),
-    tooltip: localise('stop.tooltip', 'Stop Quokka (current file)'),
+    text: t('btn.stop'),
+    tooltip: t('btn.stop.tooltip'),
   },
   {
     command: QUOKKA_CMD_STOP_ALL,
-    text: localise('stopall.text', 'Q - -'),
-    tooltip: localise('stopall.tooltip', 'Stop Quokka (all files)'),
+    text: t('btn.stopAll'),
+    tooltip: t('btn.stopAll.tooltip'),
   },
 ];
 

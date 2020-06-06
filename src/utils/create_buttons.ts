@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import * as nls from 'vscode-nls';
 import { BTN_ALIGNMENT, BTN_PRIORITY } from '../constants/buttons';
 import { Button } from '../types/buttons';
 

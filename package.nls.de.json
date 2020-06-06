@@ -1,0 +1,8 @@
+{
+  "btn.start": "Q +",
+  "btn.start.tooltip": "Quokka aktivieren (aktuelle Datei)",
+  "btn.stop": "Q -",
+  "btn.stop.tooltip": "Quokka anhalten (aktuelle Datei)",
+  "btn.stopAll": "Q - -",
+  "btn.stopAll.tooltip": "Quokka anhalten (alle Datein)"
+}

@@ -1,8 +1,0 @@
-{
-  "start.text": "QQ +",
-  "start.tooltip": "QQ Start Quokka (current file)",
-  "stop.text": "QQ -",
-  "stop.tooltip": "QQ Stop Quokka (current file)",
-  "stopall.text": "QQ - -",
-  "stopall.tooltip": "QQ Stop Quokka (all files)"
-}

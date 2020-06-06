@@ -1,12 +1,14 @@
 {
   "name": "vsc-quokka-statusbar",
-  "displayName": "Quokka Statusbar Buttons",
   "description": "Adds buttons to the status bar in Visual Studio Code (VSC) to control Quokka",
+  "displayName": "Quokka Statusbar Buttons",
   "version": "1.2.2",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "publisher": "sketchbuch",
-  "main": "./out/extension.js",
-  "icon": "logo.png",
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
   "author": {
     "name": "sketchbuch"
   },
@@ -20,20 +22,18 @@
   "engines": {
     "vscode": "^1.35.0"
   },
+  "icon": "logo.png",
   "keywords": [
     "quokka",
     "statusbar"
   ],
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "main": "./out/extension.js",
+  "publisher": "sketchbuch",
   "repository": {
     "type": "git",
     "url": "https://github.com/sketchbuch/vsc-quokka-statusbar"
   },
-  "activationEvents": [
-    "onLanguage:javascript",
-    "onLanguage:javascriptreact",
-    "onLanguage:typescript",
-    "onLanguage:typescriptreact"
-  ],
   "scripts": {
     "audit-html": "yarn audit --json | yarn-audit-html --output audit-report.html",
     "compile": "tsc -p ./",
@@ -41,9 +41,6 @@
     "test": "yarn run compile && node ./node_modules/vscode/bin/test",
     "vscode:prepublish": "yarn run compile",
     "watch": "tsc -watch -p ./"
-  },
-  "dependencies": {
-    "vscode-nls": "^4.1.1"
   },
   "devDependencies": {
     "@types/chai": "^4.2.10",
