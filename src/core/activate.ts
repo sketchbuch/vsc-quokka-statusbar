@@ -1,5 +1,5 @@
+import { getVscodeLang, loadTranslations } from 'vscode-ext-localisation';
 import * as vscode from 'vscode';
-import { loadTranslations, getVscodeLang } from '../localisation';
 import { QUOKKA_EXT_NAME } from '../constants/quokka';
 import buttons from '../buttons/buttons';
 import createButtons from '../utils/create_buttons';

@@ -1,7 +1,7 @@
+import { t } from 'vscode-ext-localisation';
 import * as vscode from 'vscode';
 import { BTN_ALIGNMENT, BTN_PRIORITY } from '../constants/buttons';
 import { Button } from '../types/buttons';
-import { t } from '../localisation';
 
 const createButtons = (buttons: Button[]): vscode.StatusBarItem[] => {
   return buttons.map(
