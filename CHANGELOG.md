@@ -3,7 +3,7 @@
 All notable changes to the "vsc-quokka-statusbar" extension will be documented in this file.
 
 
-## [1.3.3](https://github.com/sketchbuch/vsc-quokka-statusbar/compare/v1.3.1...v1.3.3) (2020-07-01)
+## [1.3.5](https://github.com/sketchbuch/vsc-quokka-statusbar/compare/v1.3.1...v1.3.5) (2020-07-01)
 
 - Removed localisation code in favour of vscode-ext-localisation
 
