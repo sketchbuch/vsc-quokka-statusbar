@@ -910,10 +910,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vscode-ext-localisation@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vscode-ext-localisation/-/vscode-ext-localisation-1.0.0.tgz#8c4153af4b06ad240ac574f8c4aaea5723eb48a3"
-  integrity sha512-rK7cnZlH9eL21sWzNSZBiHD6If3psDU7bcvUSM4WtvFr9KiY0acq8vy2Kl9nLrvRpUTwrga1rWBIuVRrkkjBMw==
+vscode-ext-localisation@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vscode-ext-localisation/-/vscode-ext-localisation-1.0.1.tgz#59c2b2b9f7e59b1d22241b8b351a54307425d5d0"
+  integrity sha512-re70E6VxInCMf4AoNehDh4G3sJTwA7d+mi/5ZdVQhBFK4IHRgbOQajaGA440RL64NKO7SPVG9MOLZOIJ7FoRIg==
   dependencies:
     path "^0.12.7"
 

@@ -56,7 +56,7 @@
     "yarn-audit-html": "^1.1.0"
   },
   "dependencies": {
-    "vscode-ext-localisation": "^1.0.0"
+    "vscode-ext-localisation": "^1.0.1"
   },
   "extensionDependency": [
     "wallabyjs.quokka-vscode"
